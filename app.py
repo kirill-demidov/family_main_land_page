@@ -8,7 +8,7 @@ HTML_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Projects</title>
+    <title>Список WEB</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -53,12 +53,12 @@ HTML_TEMPLATE = """
 </head>
 <body>
     <div class="container">
-        <h1>My Web Projects</h1>
+        <h1>Путеводитель по нашим WEB сайтам</h1>
         <ul class="site-list">
             {% for site in sites %}
             <li>
                 <a href="{{ site['url'] }}" target="_blank">{{ site['name'] }}</a>
-                <p>Description: {{ site['description'] }}</p>
+                <p>{{ site['description'] }}</p>
             </li>
             {% endfor %}
         </ul>
@@ -70,13 +70,20 @@ HTML_TEMPLATE = """
 @app.route('/')
 def home():
     sites = [
-        {"name": "Family Web", "url": "https://family-web-16542874441.europe-central2.run.app", "description": "[Placeholder]"},
-        {"name": "Gen Web", "url": "https://gen-web-16542874441.europe-central2.run.app", "description": "[Placeholder]"},
-        {"name": "Geo Web", "url": "https://geo-web-16542874441.europe-central2.run.app", "description": "[Placeholder]"},
-        {"name": "LLM Web", "url": "https://llm-web-16542874441.europe-central2.run.app", "description": "[Placeholder]"},
-        {"name": "Modeler Web", "url": "https://modeler-web-16542874441.us-central1.run.app", "description": "[Placeholder]"},
-        {"name": "Sozd Web", "url": "https://sozd-web-16542874441.europe-central2.run.app", "description": "[Placeholder]"},
-        {"name": "Traffic Lamas", "url": "https://traffic-lamas-16542874441.europe-central2.run.app", "description": "[Placeholder]"},
+        {"name": "Family Web", "url": "https://family-web-16542874441.europe-central2.run.app",
+         "description": "Семейная информация"},
+        {"name": "Gen Web", "url": "https://gen-web-16542874441.europe-central2.run.app",
+         "description": "Бизнес по генеалогии Евгении"},
+        {"name": "Geo Web", "url": "https://geo-web-16542874441.europe-central2.run.app",
+         "description": "Заготовка сайта по геоэкономике для Данилина"},
+        {"name": "LLM Web", "url": "https://llm-web-16542874441.europe-central2.run.app",
+         "description": "Новости для НДИ"},
+        {"name": "Modeler Web", "url": "https://modeler-web-16542874441.us-central1.run.app",
+         "description": "Моделер (процессор данных)"},
+        {"name": "Sozd Web", "url": "https://sozd-web-16542874441.europe-central2.run.app",
+         "description": "Законопроекты ГД РФ"},
+        {"name": "Traffic Lamas", "url": "https://traffic-lamas-16542874441.europe-central2.run.app",
+         "description": "Расчет рисков при планировании поездок"},
     ]
     return render_template_string(HTML_TEMPLATE, sites=sites)
 
