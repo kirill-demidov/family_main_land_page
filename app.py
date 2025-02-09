@@ -18,8 +18,8 @@ HTML_TEMPLATE = """
             text-align: center;
         }
         .container {
-            max-width: 800px;
-            margin: 50px auto;
+            max-width: 400px;
+            margin: 50px;
             background: white;
             padding: 20px;
             border-radius: 10px;
@@ -46,7 +46,7 @@ HTML_TEMPLATE = """
         }
         .site-list p {
             margin: 5px 0 0;
-            font-size: 14px;
+            font-size: 16px;
             color: #666;
         }
     </style>
@@ -57,7 +57,8 @@ HTML_TEMPLATE = """
         <ul class="site-list">
             {% for site in sites %}
             <li>
-                <a href="{{ site['url'] }}" target="_blank">{{ site['name'] }}</a>
+                <a href="{{ site['url'] }}" target="_blank" 
+                        title="Переход на сайт {{site['url']}}"><u>{{ site['name'] }}</u></a>
                 <p>{{ site['description'] }}</p>
             </li>
             {% endfor %}
