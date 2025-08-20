@@ -106,6 +106,8 @@ def home():
          "description": "Библиотека публикаций"},
         {"name": "Traffic Lamas", "url": "https://traffic-lamas-16542874441.europe-central2.run.app",
          "description": "Расчет рисков при планировании поездок"},
+        {"name": "Video Youtube", "url": "https://shu-web-16542874441.europe-central2.run.app",
+         "description": "Видео и комментарии из Youtube"},
     ]
     return render_template_string(HTML_TEMPLATE, sites=sites)
 
