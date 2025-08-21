@@ -72,7 +72,9 @@ HTML_TEMPLATE = """
                 {% for site in sites %}
                 <li>
                     <a href="{{ site['url'] }}" target="_blank"
-                            title="Переход на сайт {{site['url']}}"><u>{{ site['name'] }}</u></a>
+                            title="Переход на сайт {{site['url']}}">
+                            <img src="/static/{{site['icon']}}" width="18" height="18">
+                            <u>{{ site['name'] }}</u></a>
                     <p>{{ site['description'] }}</p>
                 </li>
                 {% endfor %}
@@ -87,27 +89,37 @@ HTML_TEMPLATE = """
 def home():
     sites = [
         {"name": "Family Web", "url": "https://family-web-16542874441.europe-central2.run.app",
-         "description": "Семейная информация"},
+         "description": "Семейная информация", "icon": "dollar.png"},
+
         {"name": "Gen Web", "url": "https://gen-web-16542874441.europe-central2.run.app",
-         "description": "Бизнес по генеалогии Евгении"},
+         "description": "Бизнес по генеалогии Евгении", "icon": "lupa.png"},
+
         {"name": "Geo Web", "url": "https://geo-web-16542874441.europe-central2.run.app",
-         "description": "Заготовка сайта по гео-экономике для Данилина"},
+         "description": "Заготовка сайта по гео-экономике для Данилина", "icon": "word.png"},
+
         {"name": "LLM Web", "url": "https://llm-web-16542874441.europe-central2.run.app",
-         "description": "Новости для НДИ"},
+         "description": "Новости для НДИ", "icon": "star_david.png"},
+
         {"name": "Modeler Web", "url": "https://modeler-web-16542874441.us-central1.run.app",
-         "description": "Моделер (процессор данных)"},
+         "description": "Моделер (процессор данных)", "icon": "write_db.png"},
+
         {"name": "Sozd Web", "url": "https://sozd-web-16542874441.europe-central2.run.app",
-         "description": "Законопроекты ГД РФ"},
+         "description": "Законопроекты ГД РФ", "icon": "mobile_icon.png"},
+
         {"name": "URBAN Web", "url": "https://urban-web-16542874441.europe-central2.run.app",
-         "description": "Видео из Youtube"},
+         "description": "Видео из Youtube по URBAN и конкурентам", "icon": "youtube.png"},
+
         {"name": "Archive_index Web", "url": "https://archive-web-16542874441.europe-central2.run.app",
-         "description": "Архивные документы"},
+         "description": "Архивные документы", "icon": "archive_index.png"},
+
         {"name": "LIB Web", "url": "https://lib-web-16542874441.europe-central2.run.app",
-         "description": "Библиотека публикаций"},
+         "description": "Библиотека публикаций", "icon": "library.png"},
+
         {"name": "Traffic Lamas", "url": "https://traffic-lamas-16542874441.europe-central2.run.app",
-         "description": "Расчет рисков при планировании поездок"},
+         "description": "Расчет рисков при планировании поездок", "icon": "motorway.png"},
+
         {"name": "Video Youtube", "url": "https://shu-web-16542874441.europe-central2.run.app",
-         "description": "Видео и комментарии из Youtube"},
+         "description": "Видео и комментарии из Youtube", "icon": "multi_greater.png"},
     ]
     return render_template_string(HTML_TEMPLATE, sites=sites)
 
