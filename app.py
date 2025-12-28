@@ -104,7 +104,7 @@ def home():
          "description": "Моделер (процессор данных)", "icon": "write_db.png"},
 
         {"name": "Sozd Web", "url": "https://sozd-web-16542874441.europe-central2.run.app",
-         "description": "Законопроекты ГД РФ", "icon": "mobile_icon.png"},
+         "description": "Законопроекты ГД РФ", "icon": "mobile_icon.ico"},
 
         {"name": "URBAN Web", "url": "https://urban-web-16542874441.europe-central2.run.app",
          "description": "Видео из Youtube по URBAN и конкурентам", "icon": "youtube.png"},
@@ -118,8 +118,11 @@ def home():
         {"name": "Traffic Lamas", "url": "https://traffic-lamas-16542874441.europe-central2.run.app",
          "description": "Расчет рисков при планировании поездок", "icon": "motorway.png"},
 
-        {"name": "Video Youtube", "url": "https://shu-web-16542874441.europe-central2.run.app",
+        {"name": "SHU Web", "url": "https://shu-web-16542874441.europe-central2.run.app",
          "description": "Видео и комментарии из Youtube", "icon": "multi_greater.png"},
+
+        {"name": "Chat Web", "url": "https://sozd-chat-web-16542874441.europe-central2.run.app",
+         "description": "Чат для работы с БД и текстами", "icon": "add.png"},
     ]
     return render_template_string(HTML_TEMPLATE, sites=sites)
 
