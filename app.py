@@ -91,7 +91,7 @@ def home():
         {"name": "Family Web", "url": "https://family-web-16542874441.europe-central2.run.app",
          "description": "Семейная информация", "icon": "dollar.png"},
 
-        {"name": "Gen Web", "url": "https://gen-web-16542874441.europe-central2.run.app",
+        {"name": "Gen Web", "url": "https://sergey-demidov.ru/gen",
          "description": "Бизнес по генеалогии Евгении", "icon": "lupa.png"},
 
         {"name": "Geo Web", "url": "https://geo-web-16542874441.europe-central2.run.app",
@@ -100,7 +100,7 @@ def home():
         {"name": "LLM Web", "url": "https://llm-web-16542874441.europe-central2.run.app",
          "description": "Новости для НДИ", "icon": "star_david.png"},
 
-        {"name": "Modeler Web", "url": "https://modeler-web-16542874441.us-central1.run.app",
+        {"name": "Modeler Web", "url": "https://sergey-demidov.ru/modeler",
          "description": "Моделер (процессор данных)", "icon": "write_db.png"},
 
         {"name": "Sozd Web", "url": "https://sozd-web-16542874441.europe-central2.run.app",
@@ -121,7 +121,7 @@ def home():
         {"name": "SHU Web", "url": "https://shu-web-16542874441.europe-central2.run.app",
          "description": "Видео и комментарии из Youtube", "icon": "multi_greater.png"},
 
-        {"name": "Chat Web", "url": "https://sozd-chat-web-16542874441.europe-central2.run.app",
+        {"name": "Chat Web", "url": "https://sozd-chat.org",
          "description": "Чат для работы с БД и текстами", "icon": "add.png"},
     ]
     return render_template_string(HTML_TEMPLATE, sites=sites)
