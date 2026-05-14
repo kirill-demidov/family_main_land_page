@@ -73,7 +73,7 @@ HTML_TEMPLATE = """
                 <li>
                     <a href="{{ site['url'] }}" target="_blank"
                             title="Переход на сайт {{site['url']}}">
-                            <img src="/static/{{site['icon']}}" width="18" height="18">
+                            {% if '.' in site['icon'] %}<img src="/static/{{site['icon']}}" width="18" height="18">{% else %}<span style="font-size:18px;line-height:1">{{site['icon']}}</span>{% endif %}
                             <u>{{ site['name'] }}</u></a>
                     <p>{{ site['description'] }}</p>
                 </li>
@@ -103,8 +103,11 @@ def home():
         {"name": "Modeler Web", "url": "https://sergey-demidov.ru/modeler",
          "description": "Моделер (процессор данных)", "icon": "write_db.png"},
 
-        {"name": "Sozd Web", "url": "https://sozd-web-16542874441.europe-central2.run.app",
+        {"name": "SOZD Web", "url": "https://sozd-web-16542874441.europe-central2.run.app",
          "description": "Законопроекты ГД РФ", "icon": "mobile_icon.ico"},
+
+        {"name": "RHP Web", "url": "https://rhp-web-16542874441.europe-central2.run.app",
+         "description": "История русской политики", "icon": "history_icon.svg"},
 
         {"name": "URBAN Web", "url": "https://urban-web-16542874441.europe-central2.run.app",
          "description": "Видео из Youtube по URBAN и конкурентам", "icon": "youtube.png"},
@@ -120,6 +123,12 @@ def home():
 
         {"name": "SHU Web", "url": "https://shu-web-16542874441.europe-central2.run.app",
          "description": "Видео и комментарии из Youtube", "icon": "multi_greater.png"},
+
+        {"name": "KNS Web", "url": "https://kns-web-16542874441.europe-central2.run.app",
+         "description": "Законопроекты Кнессета", "icon": "parlament.png"},
+
+        {"name": "PLM Web", "url": "https://plm-web-16542874441.europe-central2.run.app",
+         "description": "PolyMarket", "icon": "📊"},
 
         {"name": "Chat Web", "url": "https://sozd-chat.org",
          "description": "Чат для работы с БД и текстами", "icon": "add.png"},
