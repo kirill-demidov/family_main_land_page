@@ -109,8 +109,8 @@ def home():
         {"name": "RHP Web", "url": "https://rhp-web-16542874441.europe-central2.run.app",
          "description": "История русской политики", "icon": "history_icon.svg"},
 
-        {"name": "URBAN Web", "url": "https://urban-web-16542874441.europe-central2.run.app",
-         "description": "Видео из Youtube по URBAN и конкурентам", "icon": "youtube.png"},
+        # {"name": "URBAN Web", "url": "https://urban-web-16542874441.europe-central2.run.app",
+        #  "description": "Видео из Youtube по URBAN и конкурентам", "icon": "youtube.png"},
 
         {"name": "Archive_index Web", "url": "https://archive-web-16542874441.europe-central2.run.app",
          "description": "Архивные документы", "icon": "archive_index.png"},
@@ -118,8 +118,8 @@ def home():
         {"name": "LIB Web", "url": "https://lib-web-16542874441.europe-central2.run.app",
          "description": "Библиотека публикаций", "icon": "library.png"},
 
-        {"name": "Traffic Lamas", "url": "https://traffic-lamas-16542874441.europe-central2.run.app",
-         "description": "Расчет рисков при планировании поездок", "icon": "motorway.png"},
+        # {"name": "Traffic Lamas", "url": "https://traffic-lamas-16542874441.europe-central2.run.app",
+        #  "description": "Расчет рисков при планировании поездок", "icon": "motorway.png"},
 
         {"name": "SHU Web", "url": "https://shu-web-16542874441.europe-central2.run.app",
          "description": "Видео и комментарии из Youtube", "icon": "multi_greater.png"},
@@ -127,11 +127,11 @@ def home():
         {"name": "KNS Web", "url": "https://kns-web-16542874441.europe-central2.run.app",
          "description": "Законопроекты Кнессета", "icon": "parlament.png"},
 
-        {"name": "PLM Web", "url": "https://plm-web-16542874441.europe-central2.run.app",
+        {"name": "PLM Web", "url": "https://plm-web-gdmiawjkmq-ew.a.run.app/",
          "description": "PolyMarket", "icon": "📊"},
 
-        {"name": "Chat Web", "url": "https://sozd-chat.org",
-         "description": "Чат для работы с БД и текстами", "icon": "add.png"},
+        # {"name": "Chat Web", "url": "https://sozd-chat.org",
+        #  "description": "Чат для работы с БД и текстами", "icon": "add.png"},
     ]
     return render_template_string(HTML_TEMPLATE, sites=sites)
 
