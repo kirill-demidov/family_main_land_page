@@ -97,7 +97,7 @@ def home():
         {"name": "Geo Web", "url": "https://geo-web-16542874441.europe-central2.run.app",
          "description": "Заготовка сайта по гео-экономике для Данилина", "icon": "word.png"},
 
-        {"name": "LLM Web", "url": "https://llm-web-16542874441.europe-central2.run.app",
+        {"name": "OHI Web", "url": "https://llm-web-16542874441.europe-central2.run.app",
          "description": "Новости для НДИ", "icon": "star_david.png"},
 
         {"name": "Modeler Web", "url": "https://sergey-demidov.ru/modeler",
