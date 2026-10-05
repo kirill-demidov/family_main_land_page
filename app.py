@@ -127,7 +127,7 @@ def home():
         {"name": "KNS Web", "url": "https://kns-web-16542874441.europe-central2.run.app",
          "description": "Законопроекты Кнессета", "icon": "parlament.png"},
 
-        {"name": "PLM Web", "url": "https://plm-web-gdmiawjkmq-ew.a.run.app/",
+        {"name": "PLM Web", "url": "https://market.polydata.cloud/",
          "description": "PolyMarket", "icon": "📊"},
 
         # {"name": "Chat Web", "url": "https://sozd-chat.org",
